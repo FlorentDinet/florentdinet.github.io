@@ -22,18 +22,28 @@ body {
   background-size: 100%;
   font:1rem $helvetica;
   color: $light;
+  text-align:center;
 }
 
 .container {
-  padding: 2rem;
+	padding: {
+		left: 2rem;
+		right: 2rem;
+	} 
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-
-  @include mobile {
-  }
+.spacer {
+	padding: {
+		top: 5vw;
+		bottom: 5vw;
+	} 
 }
+
+// h1, h2, h3, h4, h5, h6 {
+
+//   @include mobile {
+//   }
+// }
 
 h1 {
   font-size: 30px;
@@ -61,8 +71,6 @@ p {
 
 a {
   color: $light;
-  text-decoration: none;
-	cursor: pointer;
   &:hover, &:active {
     opacity: .4;
   }
@@ -155,7 +163,6 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
