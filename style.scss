@@ -18,35 +18,12 @@ html {
 }
 
 body {
+	margin:0;
   background: $dark url("images/flodi-bg.gif");
   background-size: 100%;
   font: 1rem $helvetica;
   color: $light;
   text-align: center;
-}
-
-.container {
-  padding: {
-    left: 2rem;
-    right: 2rem;
-  }
-}
-
-.spacer {
-  padding: {
-    top: 5vw;
-    bottom: 5vw;
-  }
-}
-
-.info {
-  padding: 5vw;
-  .intro {
-    font-size: 1.875rem;
-  }
-  .meta {
-    font-size: 1.125rem;
-  }
 }
 
 // h1, h2, h3, h4, h5, h6 {
@@ -210,6 +187,31 @@ nav {
 // .main
 //
 
+.container {
+  padding: {
+    left: 2rem;
+    right: 2rem;
+  }
+}
+
+.spacer {
+  padding: {
+    top: 5rem;
+    bottom: 5rem;
+  }
+}
+
+.info {
+  padding: 5rem;
+  .intro {
+    font-size: 1.875rem;
+  }
+  .meta {
+    font-size: 1.125rem;
+  }
+}
+
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
@@ -221,6 +223,7 @@ nav {
 }
 
 .post {
+	
   blockquote {
     margin: 1.8em 0.8em;
     border-left: 2px solid $gray;

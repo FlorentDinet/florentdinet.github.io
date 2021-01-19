@@ -3,7 +3,12 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+	
+<header class="container spacer" style="background-image:url(/images{{ page.url }}{{page.title}}-cover.jpg);">
+	<!-- <h1>{{ page.title }}</h1> -->
+	<img src="/images{{ page.url }}{{page.title}}-cover.png" />
+</header>
+
 
   <div class="info" style="background-color:#{{ page.color }};">
     <p class="intro">
