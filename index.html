@@ -2,25 +2,23 @@
 layout: default
 ---
 <div class="intro spacer">
-<h1>UX / UI Designer, currently crafting at <a href="http://lumapps.com" target="_blank">LumApps</a></h1>
+  <h1>UX / UI Designer, currently crafting at <a href="http://lumapps.com" target="_blank">LumApps</a></h1>
 </div>
 
-<div class="posts spacer">
+<div class="posts container spacer">
   {% for post in site.posts %}
-    <article class="post" style="background-color:#{{ post.color }};">
-		
-    <a href="{{ site.baseurl }}{{ post.url }}">
-		
-    <img src="/images/{{ post.url }}/{{post.preview}}" />
-	  
-</a>
-      
-<!-- 	  <div class="entry">
-        {{ post.excerpt }}
-      </div> -->
+  <article class="post" style="background-color:#{{ post.color }};">
 
-      <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> -->
-	  
-    </article>
+    <a href="{{ site.baseurl }}{{ post.url }}">
+
+      <img src="/images{{ post.url }}{{post.preview}}" />
+
+    </a>
+
+    <!--- <div class="entry">{{ post.excerpt }}</div> -->
+
+    <!--- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> -->
+
+  </article>
   {% endfor %}
 </div>
